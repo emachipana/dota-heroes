@@ -1,5 +1,16 @@
-function App() {
+import { changeContent } from "./app/manager.js";
+import { handleRoute } from "./app/router.js";
 
+function App() {
+  document.querySelectorAll("#nav-item").forEach(item => {
+    item.addEventListener("click", handleRoute);
+  });
+
+  window.addEventListener("popstate", () => {
+    changeContent(location.pathname);
+  });
+
+  changeContent(location.pathname);
 }
 
-App();
+export default App;
