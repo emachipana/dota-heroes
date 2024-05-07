@@ -5,7 +5,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "sky-custom": "#386994",
+        "green-custom": "#72C076",
+        "blue-custom": "#223F59"
+      },
+      fontFamily: {
+        "nunito": ["Nunito", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
