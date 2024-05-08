@@ -1,3 +1,4 @@
+import Heroes from "../pages/Heroes.js";
 import Home from "../pages/Home.js";
 import { checkActiveRoute } from "./router.js";
 
@@ -7,10 +8,7 @@ export const changeContent = (route) => {
 
   const PAGES = {
     "/": Home(),
-    "/heroes": {
-      content: `<h1>Pagina de heroes</h1>`,
-      listeners: () => console.log("heroes listenrs")
-    },
+    "/heroes": Heroes(),
     "/heroesDetail": {
       content: `<h1>Pagina de detalles de un heroe</h1`,
       listeners: () => console.log("heroes detail listenrs")
@@ -21,11 +19,7 @@ export const changeContent = (route) => {
     }
   }
 
-  const heroId = route.split("/")[2];
-  if(heroId) {
-    container.innerHTML = PAGES["/heroesDetail"].content;
-    return PAGES["/heroesDetail"].listeners();
-  }
+  if(route.split("/")[2]) route = "/heroesDetail";
 
   container.innerHTML = PAGES[route].content;
   PAGES[route].listeners();
