@@ -23,3 +23,15 @@ body {
 .hero {
   @apply size-full h-hero bg-no-repeat bg-cover bg-center bg-[url('/background.png')] flex p-8 flex-col items-center justify-center gap-10;
 }
+
+.loader {
+  @apply animate-pulse rounded-full h-72 w-72 shadow-custom relative flex items-center justify-center overflow-hidden;
+}
+
+.loader-text {
+  @apply text-white absolute z-20 text-xl font-bold;
+}
+
+.loader-img {
+  @apply object-cover h-full w-full z-10;
+}
