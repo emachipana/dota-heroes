@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  @apply bg-sky-custom bg-opacity-90 shadow-lg shadow-gray-800 size-full flex items-center h-14 justify-center gap-12 sticky top-0;
+  @apply bg-sky-custom bg-opacity-90 shadow-lg shadow-gray-800 z-50 size-full flex items-center h-14 justify-center gap-12 sticky top-0;
 }
 
 .nav-item {
