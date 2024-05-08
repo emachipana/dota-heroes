@@ -26,6 +26,9 @@ module.exports = {
       },
       scale: {
         115: "scale(1.15)"
+      },
+      fontSize: {
+        s: "13px"
       }
     },
   },
