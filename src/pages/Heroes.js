@@ -2,12 +2,13 @@ import { handleRoute } from "../app/router.js";
 import HeroCard from "../components/HeroCard.js";
 import Loader from "../components/Loader.js";
 import { getHeroes } from "../services/index.js";
+import Title from "./Title.js";
 
 function Heroes() {
   const content = `
-    <h1 class="my-14 text-center text-4xl font-black font-odor text-white">--------- Heroes ---------</h1>
+    ${Title({ title: "Heroes" })}
     <div 
-      class="min-h-screen px-8 mb-10 flex items-center justify-center gap-8 flex-wrap"
+      class="min-h-screen px-8 mb-10 flex items-start justify-center gap-8 flex-wrap"
       id="heroes"
     >
       ${Loader({ text: "Descargando heroes..." })}
