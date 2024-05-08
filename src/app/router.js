@@ -5,6 +5,7 @@ export const handleRoute = (e) => {
   const route = e.target.getAttribute("href");
   changeContent(route);
   history.pushState(null, null, route);
+  window.scrollTo(0, 0);
 }
 
 export const checkActiveRoute = (currentRoute) => {
@@ -17,9 +18,9 @@ export const checkActiveRoute = (currentRoute) => {
   const activeItem = Array.from(items).find(item => {
     if(currentRoute.split("/")[2]) return item.getAttribute("href") === "/heroes";
 
-    return item.getAttribute("href") === currentRoute
+    return item.getAttribute("href") === currentRoute;
   });
 
-  activeItem?.classList.remove("text-slate-300");
-  activeItem?.classList.add("text-white");
+  activeItem.classList.remove("text-slate-300");
+  activeItem.classList.add("text-white");
 }
