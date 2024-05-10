@@ -4,14 +4,14 @@ function Loader({ text }) {
 
   return `
     <div 
-      class="animate-pulse rounded-full h-72 w-72 shadow-custom relative flex items-center justify-center overflow-hidden"
+      class="loader"
       id="loader"
     >
-      <p class="text-white absolute z-20 text-xl font-bold">${text}</p>
+      <p class="loader-text">${text}</p>
       <img
         id="img-loader"
         alt="background-image"
-        class="object-cover h-full w-full z-10"
+        class="loader-img"
         src="/loader/${images[randomIndex]}.png"
       />
     </div>

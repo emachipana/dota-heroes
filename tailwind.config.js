@@ -9,7 +9,9 @@ module.exports = {
       colors: {
         "sky-custom": "#386994",
         "green-custom": "#72C076",
-        "blue-custom": "#223F59"
+        "blue-custom": "#223F59",
+        "blue-1": "#182739",
+        "blue-2": "#152232"
       },
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
@@ -17,6 +19,14 @@ module.exports = {
       },
       height: {
         hero: "calc(100vh - 180px)",
+        100: "500px",
+        68: "272px"
+      },
+      minHeight: {
+        detail: "calc(100vh - 56px)"
+      },
+      width: {
+        68: "272px"
       },
       borderWidth: {
         3: "3px"
@@ -26,6 +36,9 @@ module.exports = {
       },
       scale: {
         115: "scale(1.15)"
+      },
+      fontSize: {
+        s: "13px"
       }
     },
   },

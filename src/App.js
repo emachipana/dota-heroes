@@ -10,7 +10,9 @@ function App() {
     changeContent(location.pathname);
   });
 
-  changeContent(location.pathname);
+  window.addEventListener("load", () => {
+    changeContent(location.pathname);
+  });
 }
 
 export default App;
