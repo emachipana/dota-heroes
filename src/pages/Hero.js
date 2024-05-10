@@ -82,7 +82,7 @@ function Hero({ id }) {
             ${Item({ title: "ATAQUE BASE", type: 1, content: `${hero.base_attack_min} - ${hero.base_attack_max}`})}
             ${Item({ title: "ALCANCE DE ATAQUE", type: 2, content: `${hero.attack_range}`})}
             ${Item({ title: "TASA DE ATAQUE", type: 1, content: `${hero.attack_rate}`})}
-            ${Item({ title: "PUNTOS POR ATAQUE", type: 1, content: `${hero.attack_point}`})}
+            ${Item({ title: "PUNTOS POR ATAQUE", type: 2, content: `${hero.attack_point}`})}
           </div>
           <div class="${flexRow}">
             ${Item({ title: "SALUD", type: 1, content: `${hero.base_health}`})}
