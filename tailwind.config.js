@@ -4,6 +4,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -32,7 +33,7 @@ module.exports = {
         3: "3px"
       },
       boxShadow: {
-        custom: "0px 0px 10px 5px rgba(0, 0, 0, .5)"
+        custom: "0px 0px 10px 2px rgba(0, 0, 0, .3)"
       },
       scale: {
         115: "scale(1.15)"

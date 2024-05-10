@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 body {
-  @apply bg-blue-custom font-nunito;
+  @apply bg-blue-custom dark:bg-neutral-700 font-nunito;
 }
 
 .navbar {
-  @apply bg-sky-custom bg-opacity-90 shadow-lg shadow-gray-800 z-50 size-full flex items-center h-14 justify-center gap-12 sticky top-0;
+  @apply dark:bg-neutral-600 text-white bg-sky-custom bg-opacity-90 shadow-md shadow-gray-900 z-50 size-full flex items-center h-14 justify-center px-8 gap-12 sticky top-0;
 }
 
 .nav-item {
@@ -17,7 +17,7 @@ body {
 }
 
 .footer {
-  @apply size-full bg-sky-custom flex p-4 items-center justify-start h-7;
+  @apply size-full dark:bg-neutral-600 bg-sky-custom flex p-4 items-center justify-start h-7;
 }
 
 .hero {
@@ -45,7 +45,7 @@ body {
 }
 
 .card {
-  @apply border-3 w-56 h-80 p-5 rounded-2xl relative cursor-pointer transition-transform duration-300 hover:scale-110 flex flex-col items-center justify-center text-white bg-sky-custom;
+  @apply border-3 w-56 h-80 p-5 rounded-2xl relative cursor-pointer transition-transform duration-300 hover:scale-110 flex flex-col items-center justify-center text-white dark:bg-neutral-600 bg-sky-custom;
 }
 
 .card-image {

@@ -19,17 +19,21 @@ function Home() {
       ${PersonCard({
         position: "Developer",
         name: "Branlee Landeo",
+        img: "https://avatars.githubusercontent.com/u/166888308",
         links: [
           {
+            url: "https://github.com/branliprime",
             name: "github",
           },
           {
+            url: "https://www.linkedin.com/in/branlee-jose-landeo-cardenas-a9155a278",
             name: "linkedin",
           },
           {
             name: "global",
           },
           {
+            url: "https://www.instagram.com/branli_dev",
             name: "instagram",
           },
         ]
@@ -59,17 +63,21 @@ function Home() {
       ${PersonCard({
         position: "Developer",
         name: "Danilo Huaylinos",
+        img: "https://avatars.githubusercontent.com/u/150541746",
         links: [
           {
+            url: "https://github.com/danilo674220",
             name: "github",
           },
           {
-            name: "linkedin",
+            url: "https://www.linkedin.com/in/danilo-percy-huaylinos-ayzana-3a760b278",
+            name: "linkedin"
           },
           {
             name: "global",
           },
           {
+            url: "https://www.instagram.com/ezzedaniloha",
             name: "instagram",
           },
         ]
