@@ -1,26 +1,17 @@
 function PersonCard({ name, img, position, links = [] }) {
   return `
-    <div 
-      class="
-        border-3 w-56 h-80 p-5 rounded-2xl cursor-pointer
-        transition-transform duration-300 hover:scale-110
-        flex flex-col items-center justify-center gap-5
-      text-white bg-sky-custom
-      "
-    >
+    <div class="card gap-5">
       <img
         src="${img || "/default.jpg"}"
         alt="${name}-profile"
-        width="120px"
-        height="120px"
-        class="rounded-full object-cover border-2"
+        class="card-image"
       />
-      <div class="flex items-center flex-col">
-        <h4 class="text-xl font-bold text-center">${name}</h4>
-        <p class="text-center">${position}</p>
+      <div class="card-column">
+        <h4 class="card-name">${name}</h4>
+        <p>${position}</p>
       </div>
       <hr class="size-full h-0" />
-      <div class="size-full h-auto flex items-center justify-between px-1">
+      <div class="card-row">
         ${
           links.map(link => (
             `
