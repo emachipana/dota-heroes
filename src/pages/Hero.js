@@ -1,6 +1,6 @@
 import Item from "../components/Item.js";
 import Loader from "../components/Loader.js";
-import { getHeroes } from "../services/index.js";
+import { get } from "../services/index.js";
 
 function Hero({ id }) {
   const baseUri = "https://cdn.cloudflare.steamstatic.com";
@@ -13,7 +13,7 @@ function Hero({ id }) {
   return {
     content,
     listeners: async () => {
-      const heroes = await getHeroes();
+      const heroes = await get("heroStats");
       const hero = heroes.find(hero => hero.id === (id * 1));
       const container = document.getElementById("hero");
       container.classList.remove("justify-center");
