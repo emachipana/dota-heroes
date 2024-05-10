@@ -35,3 +35,7 @@ body {
 .loader-img {
   @apply object-cover h-full w-full z-10;
 }
+
+.text {
+  @apply text-base font-bold;
+}
