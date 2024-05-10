@@ -1,5 +1,5 @@
 function HeroCard({ id, img, localized_name }) {
-  const baseUri = "https:/cdn.cloudflare.steamstatic.com";
+  const baseUri = "https://cdn.cloudflare.steamstatic.com";
 
   return `
     <div 
