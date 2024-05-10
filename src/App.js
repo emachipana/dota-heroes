@@ -38,6 +38,7 @@ function App() {
 
   window.addEventListener("load", () => {
     changeContent(location.pathname);
+    toggle.classList.remove("hidden");
   });
 }
 
